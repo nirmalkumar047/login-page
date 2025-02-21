@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id"
+        content="309995071733-pqb63rsao1l7ifvtg2v4an41ge4pl8uv.apps.googleusercontent.com">
+    <title>Show Time</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="nklogo.png" />
+</head>
+
+<body>
+    <section class="1" id="1">
+     <div class="login" id="login">
+        <div class="form-container signup">
+            <form>
+                <h1>Create Account :)</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon">login with <i class="fa-brands fa-google"></i></a>
+                </div>
+                <span> or use email for registration </span>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+
+                <input type="password" placeholder="Password">
+                <a href="#2">
+                    <button>sign up</button>
+                </a>
+
+            </form>
+        </div>
+        <div class="form-container signin">
+            <form action="">
+                <h1>Sign In :></h1>
+                <div class="social-icons">
+                    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                </div>
+                <span> or use email password </span>
+
+                <input type="email" placeholder="Email">
+
+                <input type="password" placeholder="Password">
+                <a href="#">Forget Your Password?</a>
+                <br>
+                <a href="/showtime.html"><button>sign in</button></a>
+
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details to use all of site features</p>
+                    <button class="hidden" id="signin">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Register with your personal details to use all of site features</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section class="2" id="2">
+        <h1>showtime</h1>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+</body>
+
+</html>
